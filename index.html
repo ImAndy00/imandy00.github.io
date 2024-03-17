@@ -3,56 +3,33 @@
 <head>
 <meta charset="utf-8">
 <title>Welcome to Andres' homepage</title>
+<link href="assets/css/main.css" rel="stylesheet">
 </head>
-<body>
-	<h1>Welcome to my homepage!</h1>
-    <br/>
-    <hr/>
-    
-    <h2>Introduction</h2>
-    <p>Hello, my name is Andres Tostado! I am currently pursuing a degree in Computer Science at the University of Texas at San Antonio, and I am passionate about Software Engineering, Web Development and Application Development. Born in El Paso, Texas, I've always been drawn to all aspects of technology and have additional experience in Audio/Video production.</p>
-    <br/>
-	<hr/>
-    
-	<h2>School Information</h2>
-	<p><b>School:</b> <i>University of Texas at San Antonio</i></p>
-    <p><b>Major:</b> <i>Computer Science</i></p>
-    <p><b>Current Courses: </b></p>
-    <blockquote>
-        <p>Software Engineering</p>
-        <p>Web Technologies</p>
-        <p>Computer Architecture</p>
-        <p>Operating Systems</p>
-    </blockquote>
-    <br/>
-    <hr/>
-    
-	<h2>Hobbies</h2>
-	<p>My hobbies include: </p>
-    <blockquote>
-        <p></p>
-        <p>Playing Video Games</p>
-        <p>Lifting Weights</p>
-        <p>Playing basketball</p>
-        <p>Watching sports</p>
-    </blockquote>
-    <br/>
-    <hr/>
-    
-    <h2>Work Aspirations/Experience</h2>
-    <p>I aspire to get a job in Software Engineering, Web Development, or Application Development whenever I graduate. I don't have a company I necessarily prefer to work for, and am more interested in working somewhere with an inclusive and inspiring work environment. This previous summer I gained experience in creating web applications while I was an Applications Development Intern for the company Nagarro. There I gained hands-on experience with JavaScript, CSS, API's, and React.</p>
-    <br/>
-    <hr/>
-    
-    <h2>Favorite Movies</h2>
-    <p>Some of my favorite movies include: </p>
-    <blockquote>
-        <p>Star Wars: Episode III - <i>Revenge of the Sith</i></p>
-        <p>Moneyball</p>
-        <p>Iron Man 3</p>
-        <p>The Wolf of Wall Street</p>
-    </blockquote>
-    <br/>
+<body class="screen">
+    <table width="100%">
+        <tr rowspan="1">
+            <td colspan="5" class="banner"><h1>Welcome to My Homepage!</h1></td>
+        </tr>
+        <tr class="navbar">
+            <td class="selected" width="20%">Home</td>
+            <td width="20%" ><a href="school.html">School</a></td>
+            <td width="20%" ><a href="hobbies.html">Interests</a></td>
+            <td width="20%" ><a href ="work.html">Work</a></td>
+            <td width="20%" ><a href="contact.html">Contact</a></td>
+        </tr>
+        <table class="content" width="100%">
+            <br/>
+            <tr rowspan="1">
+                <td class="headerText" colspan="2"><h2>Introduction</h2></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <img src="images/profilePic.jpg" alt="Profile Picture" width="175" height="175">
+                    <p class="bodyText">Hello, my name is Andres Tostado! I am currently pursuing a degree in Computer Science at the University of Texas at San Antonio, and I am passionate about Software Engineering, Web Development and Application Development. Born in El Paso, Texas, I've always been drawn to all aspects of technology and have additional experience in Audio/Video production.</p>
+                </td>
+            </tr>
+        </table>
+    </table>
     
 </body>
 </html>
