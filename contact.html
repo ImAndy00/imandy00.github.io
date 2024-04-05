@@ -96,49 +96,73 @@
 <!-- /.top-area--> 
 <!-- top-area End --> 
 
-<!--welcome-hero start -->
-<section id="welcome-hero" class="welcome-hero">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 text-center">
-        <div id="greeting"></div>
-        <div class="header-text">
-          <h2>Welcome to My Homepage!</h2>
-        </div>
-        <!--/.header-text--> 
-      </div>
-      <!--/.col--> 
-    </div>
-    <!-- /.row--> 
-  </div>
-  <!-- /.container--> 
-  
-</section>
-<!--/.welcome-hero--> 
-<!--welcome-hero end --> 
-
-<!--about start -->
-<section id="about" class="content">
+<!--school start --> 
+<br/>
+<br/>
+<br/>
+<br/>
+<!--contact start -->
+<section id="contact" class="contact">
   <div class="section-heading text-center">
-    <h2>about me</h2>
+    <h2>contact me</h2>
   </div>
   <div class="container">
     <div class="body-content">
       <div class="row">
-        <div class="col-sm-6">
-          <div class="single-content-txt">
-            <p> Hello, my name is Andres Tostado! I am currently pursuing a degree in Computer Science at the University of Texas at San Antonio, and I am passionate about Software Engineering, Web Development and Application Development. Born in El Paso, Texas, I've always been drawn to all aspects of technology and have additional experience in Audio/Video production. </p>
+        <div class="contact-content">
+        <form method="get" action="results.php" id="mainForm">
+          <div id="firstNameBox" class="form-group">
+            <label for="firstname">Enter first name: </label>
+            <input type="text" id="firstname" name="firstname" class="form-control"/>
+            <div id="feedbackFirst"></div>
           </div>
+          <div id="lastNameBox" class="form-group">
+            <label for="lastname">Enter last name: </label>
+            <input type="text" id="lastname" name="lastname" class="form-control"/>
+            <div id="feedbackLast"></div>
+          </div>
+          <div id="emailBox" class="form-group">
+            <label for="email">Enter email: </label>
+            <input type="text" id="email" name="email" class="form-control"/>
+            <div id="feedbackEmail"></div>
+          </div>
+          <div id="phoneBox" class="form-group">
+            <label for="phone">Enter phone: </label>
+            <input type="number" id="phone" name="phone" class="form-control"/>
+            <div id="feedbackPhone"></div>
+          </div>
+          <div id="usernameBox" class="form-group">
+            <label for="username">Create a username: </label>
+            <input type="text" id="username" name="username" class="form-control"/>
+            <div id="feedbackUser"></div>
+          </div>
+          <div id="passwordBox" class="form-group">
+            <label for="password" >Create a password: </label>
+            <input type="password" id="password" name="password" class="form-control"/>
+            <div id="feedbackPassword"></div>
+          </div>
+          <div id="commentsBox" class="form-group">
+            <label for="comments">Comments: </label>
+            <textarea id="comments" name="comments" class="form-control"></textarea>
+            <div id="feedbackComments"></div>
+          </div>
+          <div class="form-group">
+            <input type="submit" value="Submit" name="submit"/>
+          </div>
+        </form>
         </div>
-        <div class="col-sm-offset-1 col-sm-3">
-          <div class="single-about-img"> <img src="../images/profilePic.jpg" alt="profile_image"> </div>
-        </div>
+        <!--/.col--> 
       </div>
+      <!--/.row--> 
+      <!--/form--> 
     </div>
+    <!--/.contact-form--> 
   </div>
+  <!--/.single-contact-box--> 
+  
 </section>
-<!--/.about--> 
-<!--about end --> 
+<!--/.contact--> 
+<!--contact end --> 
 
 <!--footer-copyright start-->
 <footer id="footer-copyright" class="footer-copyright">
@@ -161,8 +185,9 @@
 <!--footer-copyright end--> 
 
 <!-- Include all js compiled plugins (below), or include individual files as needed --> 
-    
 
+<script src="assets/js/event-attributes.js"></script> 
+    
 <script src="assets/js/jquery.js"></script> 
 
 <!--modernizr.min.js--> 
@@ -194,6 +219,4 @@
 <!--Custom JS--> 
 <script src="assets/js/custom.js"></script>
 </body>
-</html> 
-<!--Greeting JS-->
-<script src="assets/js/add-content.js"></script>
+</html>
